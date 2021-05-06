@@ -129,3 +129,110 @@ Question 6:
 Please write a binary search function which searches an item in a sorted list. The
 function should return the index of element to be searched in the list.
 
+**PythonBasicProgramming_15**
+
+Question 1:
+Please write a program using generator to print the numbers which can be divisible by 5 and
+7 between 0 and n in comma separated form while n is input by console.
+Example:
+If the following n is given as input to the program:
+100
+Then, the output of the program should be:
+0,35,70
+
+Question 2:
+Please write a program using generator to print the even numbers between 0 and n in comma
+separated form while n is input by console.
+Example:
+If the following n is given as input to the program:
+10
+Then, the output of the program should be:
+0,2,4,6,8,10
+
+Question 3:
+The Fibonacci Sequence is computed based on the following formula:
+f(n)=0 if n=0
+f(n)=1 if n=1
+f(n)=f(n-1)+f(n-2) if n&gt;1
+Please write a program using list comprehension to print the Fibonacci Sequence in comma
+separated form with a given n input by console.
+Example:
+If the following n is given as input to the program:
+7
+
+Then, the output of the program should be:
+0,1,1,2,3,5,8,13
+
+Question 4:
+Assuming that we have some email addresses in the &quot;username@companyname.com&quot; format,
+please write program to print the user name of a given email address. Both user names and
+company names are composed of letters only.
+Example:
+If the following email address is given as input to the program:
+john@google.com
+Then, the output of the program should be:
+john
+
+Question 5:
+Define a class named Shape and its subclass Square. The Square class has an init function
+which takes a length as argument. Both classes have a area function which can print the area
+of the shape where Shape&#39;s area is 0 by default.
+
+**PythonBasicProgramming_16**
+
+Question1. Write a function that stutters a word as if someone is struggling to read it. The
+first two letters are repeated twice with an ellipsis ... and space after each, and then the
+word is pronounced with a question mark ?.
+Examples
+stutter(&quot;incredible&quot;) ➞ &quot;in... in... incredible?&quot;
+stutter(&quot;enthusiastic&quot;) ➞ &quot;en... en... enthusiastic?&quot;
+stutter(&quot;outstanding&quot;) ➞ &quot;ou... ou... outstanding?&quot;
+
+Hint :- Assume all input is in lower case and at least two characters long.
+
+Question 2.Create a function that takes an angle in radians and returns the corresponding
+angle in degrees rounded to one decimal place.
+Examples
+radians_to_degrees(1) ➞ 57.3
+radians_to_degrees(20) ➞ 1145.9
+radians_to_degrees(50) ➞ 2864.8
+
+Question 3. In this challenge, establish if a given integer num is a Curzon number. If 1 plus
+2 elevated to num is exactly divisible by 1 plus 2 multiplied by num, then num is a Curzon
+number.
+Given a non-negative integer num, implement a function that returns True if num is a Curzon
+number, or False otherwise.
+Examples
+is_curzon(5) ➞ True
+# 2 ** 5 + 1 = 33
+# 2 * 5 + 1 = 11
+# 33 is a multiple of 11
+is_curzon(10) ➞ False
+# 2 ** 10 + 1 = 1025
+# 2 * 10 + 1 = 21
+# 1025 is not a multiple of 21
+is_curzon(14) ➞ True
+# 2 ** 14 + 1 = 16385
+# 2 * 14 + 1 = 29
+# 16385 is a multiple of 29
+
+Question 4.Given the side length x find the area of a hexagon.
+
+Examples
+area_of_hexagon(1) ➞ 2.6
+area_of_hexagon(2) ➞ 10.4
+area_of_hexagon(3) ➞ 23.4
+
+Question 5. Create a function that returns a base-2 (binary) representation of a base-10
+(decimal) string number. To convert is simple: ((2) means base-2 and (10) means base-10)
+010101001(2) = 1 + 8 + 32 + 128.
+Going from right to left, the value of the most right bit is 1, now from that every bit to the left
+will be x2 the value, value of an 8 bit binary numbers are (256, 128, 64, 32, 16, 8, 4, 2, 1).
+Examples
+binary(1) ➞ &quot;1&quot;
+# 1*1 = 1
+binary(5) ➞ &quot;101&quot;
+# 1*1 + 1*4 = 5
+binary(10) ➞ &quot;1010&quot;
+# 1*2 + 1*8 = 10
+
