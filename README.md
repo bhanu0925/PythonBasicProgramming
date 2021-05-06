@@ -204,17 +204,17 @@ Given a non-negative integer num, implement a function that returns True if num 
 number, or False otherwise.
 Examples
 is_curzon(5) ➞ True
-# 2 ** 5 + 1 = 33
-# 2 * 5 + 1 = 11
-# 33 is a multiple of 11
+2 ** 5 + 1 = 33
+2 * 5 + 1 = 11
+33 is a multiple of 11
 is_curzon(10) ➞ False
-# 2 ** 10 + 1 = 1025
-# 2 * 10 + 1 = 21
-# 1025 is not a multiple of 21
+2 ** 10 + 1 = 1025
+2 * 10 + 1 = 21
+1025 is not a multiple of 21
 is_curzon(14) ➞ True
-# 2 ** 14 + 1 = 16385
-# 2 * 14 + 1 = 29
-# 16385 is a multiple of 29
+2 ** 14 + 1 = 16385
+2 * 14 + 1 = 29
+16385 is a multiple of 29
 
 Question 4.Given the side length x find the area of a hexagon.
 
@@ -230,9 +230,9 @@ Going from right to left, the value of the most right bit is 1, now from that ev
 will be x2 the value, value of an 8 bit binary numbers are (256, 128, 64, 32, 16, 8, 4, 2, 1).
 Examples
 binary(1) ➞ &quot;1&quot;
-# 1*1 = 1
+1*1 = 1
 binary(5) ➞ &quot;101&quot;
-# 1*1 + 1*4 = 5
+1*1 + 1*4 = 5
 binary(10) ➞ &quot;1010&quot;
-# 1*2 + 1*8 = 10
+1*2 + 1*8 = 10
 
