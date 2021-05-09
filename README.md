@@ -595,3 +595,135 @@ Notes
  The mean of all digits is the sum of digits / how many digits there are (e.g. mean of digits in
 512 is (5+1+2)/3(number of digits) = 8/3=2).
  The mean will always be an integer.
+
+**PythonBasicPrograming**
+
+Question1
+Create a function that takes an integer and returns a list from 1 to the given number, where:
+1. If the number can be divided evenly by 4, amplify it by 10 (i.e. return 10 times the
+number).
+2. If the number cannot be divided evenly by 4, simply return the number.
+Examples
+amplify(4) ➞ [1, 2, 3, 40]
+amplify(3) ➞ [1, 2, 3]
+amplify(25) ➞ [1, 2, 3, 40, 5, 6, 7, 80, 9, 10, 11, 120, 13, 14, 15, 160,
+17, 18, 19, 200, 21, 22, 23, 240, 25]
+Notes
+ The given integer will always be equal to or greater than 1.
+ Include the number (see example above).
+ To perform this problem with its intended purpose, try doing it with list
+comprehensions. If that&#39;s too difficult, just solve the challenge any way you can.
+
+Question2
+Create a function that takes a list of numbers and return the number that&#39;s unique.
+Examples
+unique([3, 3, 3, 7, 3, 3]) ➞ 7
+unique([0, 0, 0.77, 0, 0]) ➞ 0.77
+unique([0, 1, 1, 1, 1, 1, 1, 1]) ➞ 0
+Notes
+Test cases will always have exactly one unique number while all others are the same.
+
+Question3
+Your task is to create a Circle constructor that creates a circle with a radius provided by an
+argument. The circles constructed must have two getters getArea() (PIr^2) and
+getPerimeter() (2PI*r) which give both respective areas and perimeter (circumference).
+
+For help with this class, I have provided you with a Rectangle constructor which you can use
+as a base example.
+Examples
+circy = Circle(11)
+circy.getArea()
+ Should return 380.132711084365
+circy = Circle(4.44)
+circy.getPerimeter()
+ Should return 27.897342763877365
+Notes
+Round results up to the nearest integer.
+
+Question4
+Create a function that takes a list of strings and return a list, sorted from shortest to longest.
+Examples
+sort_by_length([&quot;Google&quot;, &quot;Apple&quot;, &quot;Microsoft&quot;])
+➞ [&quot;Apple&quot;, &quot;Google&quot;, &quot;Microsoft&quot;]
+sort_by_length([&quot;Leonardo&quot;, &quot;Michelangelo&quot;, &quot;Raphael&quot;, &quot;Donatello&quot;])
+➞ [&quot;Raphael&quot;, &quot;Leonardo&quot;, &quot;Donatello&quot;, &quot;Michelangelo&quot;]
+sort_by_length([&quot;Turing&quot;, &quot;Einstein&quot;, &quot;Jung&quot;])
+➞ [&quot;Jung&quot;, &quot;Turing&quot;, &quot;Einstein&quot;]
+Notes
+All test cases contain lists with strings of different lengths, so you won&#39;t have to deal with
+multiple strings of the same length.
+
+Question5
+Create a function that validates whether three given integers form a Pythagorean triplet. The
+sum of the squares of the two smallest integers must equal the square of the largest number to
+be validated.
+
+Examples
+is_triplet(3, 4, 5) ➞ True
+ 3² + 4² = 25
+ 5² = 25
+is_triplet(13, 5, 12) ➞ True
+ 5² + 12² = 169
+ 13² = 169
+is_triplet(1, 2, 3) ➞ False
+ 1² + 2² = 5
+ 3² = 9
+Notes
+Numbers may not be given in a sorted order.
+
+**PythonBasicProgramming_25**
+
+Question1
+Create a function that takes three integer arguments (a, b, c) and returns the amount of
+integers which are of equal value.
+Examples
+equal(3, 4, 3) ➞ 2
+equal(1, 1, 1) ➞ 3
+equal(3, 4, 1) ➞ 0
+Notes
+Your function must return 0, 2 or 3.
+
+Question2
+Write a function that converts a dictionary into a list of keys-values tuples.
+Examples
+dict_to_list({
+&quot;D&quot;: 1,
+&quot;B&quot;: 2,
+&quot;C&quot;: 3
+}) ➞ [(&quot;B&quot;, 2), (&quot;C&quot;, 3), (&quot;D&quot;, 1)]
+dict_to_list({
+&quot;likes&quot;: 2,
+&quot;dislikes&quot;: 3,
+&quot;followers&quot;: 10
+}) ➞ [(&quot;dislikes&quot;, 3), (&quot;followers&quot;, 10), (&quot;likes&quot;, 2)]
+Notes
+Return the elements in the list in alphabetical order.
+
+Question3
+Write a function that creates a dictionary with each (key, value) pair being the (lower case,
+upper case) versions of a letter, respectively.
+Examples
+mapping([&quot;p&quot;, &quot;s&quot;]) ➞ { &quot;p&quot;: &quot;P&quot;, &quot;s&quot;: &quot;S&quot; }
+
+mapping([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]) ➞ { &quot;a&quot;: &quot;A&quot;, &quot;b&quot;: &quot;B&quot;, &quot;c&quot;: &quot;C&quot; }
+mapping([&quot;a&quot;, &quot;v&quot;, &quot;y&quot;, &quot;z&quot;]) ➞ { &quot;a&quot;: &quot;A&quot;, &quot;v&quot;: &quot;V&quot;, &quot;y&quot;: &quot;Y&quot;, &quot;z&quot;: &quot;Z&quot; }
+Notes
+All of the letters in the input list will always be lowercase.
+
+Question4
+Write a function, that replaces all vowels in a string with a specified vowel.
+Examples
+vow_replace(&quot;apples and bananas&quot;, &quot;u&quot;) ➞ &quot;upplus und bununus&quot;
+vow_replace(&quot;cheese casserole&quot;, &quot;o&quot;) ➞ &quot;chooso cossorolo&quot;
+vow_replace(&quot;stuffed jalapeno poppers&quot;, &quot;e&quot;) ➞ &quot;steffed jelepene peppers&quot;
+Notes
+All words will be lowercase. Y is not considered a vowel.
+
+Question5
+Create a function that takes a string as input and capitalizes a letter if its ASCII code is even
+and returns its lower case version if its ASCII code is odd.
+Examples
+ascii_capitalize(&quot;to be or not to be!&quot;) ➞ &quot;To Be oR NoT To Be!&quot;
+ascii_capitalize(&quot;THE LITTLE MERMAID&quot;) ➞ &quot;THe LiTTLe meRmaiD&quot;
+ascii_capitalize(&quot;Oh what a beautiful morning.&quot;) ➞ &quot;oH wHaT a BeauTiFuL
+moRNiNg.&quot;
